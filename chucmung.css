@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./coanh.jpg'); /* Thay đổi link ảnh nền lãng mạn */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Tạo lớp phủ mờ tối trên nền */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s; /* Hiệu ứng xuất hiện */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.6rem; /* Kích thước chữ lớn hơn để nổi bật */
+    color: #e91e63; /* Màu hồng ngọt ngào */
+    font-weight: bold;
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    min-height: 40px; /* Đảm bảo chỗ trống cho thông điệp */
+    word-wrap: break-word;
+    text-align: justify; /* Căn đều văn bản */
+}
+
+/* Hiệu ứng chữ gõ cho lời chúc */
+.message-line {
+    white-space: pre-wrap; /* Duy trì khoảng trắng và xuống dòng */
+}

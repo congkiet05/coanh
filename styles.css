@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://example.com/background.jpg'); /* Đổi link ảnh nền */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Tạo lớp phủ mờ tối trên nền */
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Kiểu chữ trang nhã */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-style: italic; /* Làm cho lời nhắn nhẹ nhàng hơn */
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    outline: none;
+    text-align: center;
+}
+
+input[type="password"]:focus {
+    border-color: #ff4081;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e91e63;
+    transform: translateY(-3px); /* Hiệu ứng khi hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #4caf50;
+    font-weight: bold;
+    min-height: 40px; /* Đảm bảo chỗ trống cho thông điệp */
+    word-wrap: break-word;
+    text-align: justify; /* Căn đều văn bản */
+}
